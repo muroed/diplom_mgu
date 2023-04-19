@@ -5,8 +5,8 @@
 double IntegralTrapInf(std::vector<double> _beta, std::vector<double> _m, int _i_, double Fn_1) {
   int i; // счётчик
   double integral; // здесь будет интеграл
-  double a = 0.0, b = 5000; // задаём отрезок интегрирования
-  double h = 1;// задаём шаг интегрирования
+  double a = 0.0, b = 100; // задаём отрезок интегрирования
+  double h = 0.1;// задаём шаг интегрирования
   double n; // задаём число разбиений n
   n = (b - a) / h;
   // вычисляем интеграл по формуле центральных прямугольников
@@ -185,9 +185,9 @@ int main() {
 
 
   // std::vector<double> x = Generate_x(X, _c);
-  std::vector<double> x = GenerateNum(1);
+  std::vector<double> x = GenerateNum(X);
   std::cout << "'x' generate successful" << std::endl;
-  // PrintVector(x);
+  PrintVector(x);
   //  start call func F
   double F = F_n(_lambda, _beta, _m, x);
 
