@@ -15,6 +15,8 @@ double IntegralTrapU(std::vector<double> _m, int _i_, double x, double Fn_1);
 double fU(std::vector<double> _m, int i, double x, double Fn_1);
 double F_n(std::vector<double> _lambda, std::vector<double> _beta, std::vector<double> _m, std::vector<double> x);
 std::vector<double> GenerateRaspr(double l);
+std::vector<double> GenerateNum(double l);
+std::vector<double> GenerateFunc(double l, double k, double b);
 std::vector<double> Generate_b();
 std::vector<double> Generate_m();
 std::vector<double> Generate_c();
